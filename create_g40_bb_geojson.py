@@ -9,7 +9,7 @@ def process_row_into_feature(row):
     b = int(row['bb_bottom'])
     r = int(row['bb_right'])
     t = int(row['bb_top'])
-    return gj.Feature(geometry=gj.Polygon([[(t,l), (b,l), (b,r), (t,r), (t,l)]]))
+    return gj.Feature(geometry=gj.Polygon([[(l,t), (l,b), (r,b), (r,t), (l,t)]]))
 
 def process_tsv(file_path):
     """
