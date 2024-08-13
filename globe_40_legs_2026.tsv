@@ -1,0 +1,8 @@
+leg_name	start_city	start_lat	start_lon	start_date_time_utc	start_time_utc	tz_start	finish_city	finish_lat	finish_lon	approx_finish_date	tz_finish	minimum_duration_days	bb_left	bb_bottom	bb_right	bb_top
+prologue	Lorient	47.696	-3.377	2025-08-31	12:00	1	Cadiz	36.55	-6.282	2025-09-04	1	4	-14	35	-2	48
+leg 1	Cadiz	36.55	-6.282	2025-09-14	12:00	1	Mindelo	16.886	-24.993	2025-09-20	-1	6	-26	16	-6	37
+leg 2	Mindelo	16.886	-24.993	2025-10-02	14:00	-1	Reunion	-20.936	55.278	2025-11-01	4	30	-35	-40	56	17
+leg 3	Reunion	-20.936	55.278	2025-11-21	9:00	4	Sydney	-33.733	151.283	2025-12-15	10	24	55	-42	152	-20
+leg 4	Sydney	-33.733	151.283	2026-01-01	3:00	10	Valparaiso	-33.045	-71.617	2026-01-31	-4	30	150	-48	-71	-31
+leg 5	Valparaiso	-33.045	-71.617	2026-02-18	17:00	-4	Recife	-8.043	-34.854	2026-03-15	-3	25	-80	-60	-30	-7
+leg 6	Recife	-8.043	-34.854	2026-03-29	16:00	-3	Lorient	47.696	-3.377	2026-04-17	1	19	-35	-9	-3	51
