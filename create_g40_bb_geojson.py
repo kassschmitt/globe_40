@@ -9,7 +9,7 @@ def process_row_into_feature(row):
     b = int(row['bb_bottom'])
     r = int(row['bb_right'])
     t = int(row['bb_top'])
-    return gj.Feature(geometry=gj.Polygon([[(l,t), (l,b), (r,b), (r,t), (l,t)]]))
+    return gj.Feature(geometry=gj.Polygon([[(l,t), (l,b), (r,b), (r,t), (l,t)]]), properties={"title": "{}".format(row['leg_name']), "description": "{} to {}".format(row['start_city'], row['finish_city']), "stroke": row['leg_color_code'], "fill": row['leg_color_code']})
 
 def process_tsv(file_path):
     """
@@ -25,7 +25,6 @@ def process_tsv(file_path):
     feature_collection = gj.FeatureCollection(feature_list)
     print(gj.dumps(feature_collection))
 
-# Example usage
 if __name__ == "__main__":
     # Replace 'your_file.tsv' with the path to your TSV file
     tsv_file_path = 'globe_40_legs_2026.tsv'
