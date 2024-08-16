@@ -1,0 +1,2 @@
+leg_name	leg_color_code	start_city	start_lat	start_lon	start_date	start_time_utc	tz_start	finish_city	finish_lat	finish_lon	approx_finish_date	tz_finish	minimum_duration_days	bb_left	bb_bottom	bb_right	bb_top
+prologue	#FF0000	Lorient	47.696	-3.377	2025-08-31	12:00	1	Cadiz	36.55	-6.282	2025-09-04	1	4	-15	35	-2	48

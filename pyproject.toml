@@ -8,7 +8,15 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 geojson = "^3.1.0"
+cmdline-provenance = "^1.1.0"
+cdsapi = "^0.7.0"
+vcrpy = "^6.0.1"
+pytest = "^8.3.2"
 
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.6"
+black = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core"]

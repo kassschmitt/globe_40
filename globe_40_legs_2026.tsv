@@ -1,9 +1,8 @@
-leg_name	leg_color_code	start_city	start_lat	start_lon	start_date_time_utc	start_time_utc	tz_start	finish_city	finish_lat	finish_lon	approx_finish_date	tz_finish	minimum_duration_days	bb_left	bb_bottom	bb_right	bb_top
-prologue	#FF0000	Lorient	47.696	-3.377	2025-08-31	12:00	1	Cadiz	36.55	-6.282	2025-09-04	1	4	-14	35	-2	48
-leg 1	#FF7F00	Cadiz	36.55	-6.282	2025-09-14	12:00	1	Mindelo	16.886	-24.993	2025-09-20	-1	6	-26	16	-6	37
-leg 2	#FFFF00	Mindelo	16.886	-24.993	2025-10-02	14:00	-1	Reunion	-20.936	55.278	2025-11-01	4	30	-35	-40	56	17
-leg 3	#00FF00	Reunion	-20.936	55.278	2025-11-21	9:00	4	Sydney	-33.733	151.283	2025-12-15	10	24	55	-42	152	-20
-leg 4	#0000FF	Sydney	-33.733	151.283	2026-01-01	3:00	10	Valparaiso	-33.045	-71.617	2026-01-31	-4	30	150	-48	180	-31
-leg 4	#0000FF	Sydney	-33.733	151.283	2026-01-01	3:00	10	Valparaiso	-33.045	-71.617	2026-01-31	-4	30	-180	-48	-71	-31
-leg 5	#4B0082	Valparaiso	-33.045	-71.617	2026-02-18	17:00	-4	Recife	-8.043	-34.854	2026-03-15	-3	25	-80	-60	-30	-7
-leg 6	#9400D3	Recife	-8.043	-34.854	2026-03-29	16:00	-3	Lorient	47.696	-3.377	2026-04-17	1	19	-35	-9	-3	51
+leg_name	start_city	start_lat	start_lon	start_date	start_time_utc	tz_start	finish_city	finish_lat	finish_lon	approx_finish_date	tz_finish	minimum_duration_days	bb_left	bb_bottom	bb_right	bb_top
+prologue	Lorient	47.696	-3.377	2025-08-31 12:00	12:00	1	Cadiz	36.550	-6.282	2025-09-04	1	4	-15	35	-2	48
+leg_1	Cadiz	36.550	-6.282	2025-09-14 12:00	12:00	1	Mindelo	16.886	-24.993	2025-09-20	-1	6	-30	15	-5	40
+leg_2	Mindelo	16.886	-24.993	2025-10-02 14:00	14:00	-1	Reunion	-20.936	55.278	2025-11-01	4	30	-50	-45	60	20
+leg_3	Reunion	-20.936	55.278	2025-11-21 9:00	9:00	4	Sydney	-33.733	151.283	2025-12-15	10	24	50	-45	155	-5
+leg_4	Sydney	-33.733	151.283	2026-01-01 3:00	3:00	10	Valparaiso	-33.045	-71.617	2026-01-31	-4	30	150	-45	-70	-25
+leg_5	Valparaiso	-33.045	-71.617	2026-02-18 17:00	17:00	-4	Recife	-8.043	-34.854	2026-03-15	-3	25	-90	-60	-20	-0
+leg_6	Recife	-8.043	-34.854	2026-03-29 16:00	16:00	-3	Lorient	47.696	-3.377	2026-04-17	1	19	-50	-10	-2	55
