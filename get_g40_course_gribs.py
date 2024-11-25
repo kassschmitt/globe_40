@@ -18,7 +18,7 @@ def process_row_into_area(row):
 
 
 def process_row_into_intervals(
-    row, percentage_to_change, days_either_end, year_shifts=[-6, -5, -4, -3, -2]
+    row, percentage_to_change, days_either_end, year_shifts=[-11, -10, -9, -8, -7, -6, -5, -4, -3]        
 ):
     """
     Extends the interval based on the given percentage and days padding.
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     percentage_to_change = 25
     days_either_end = 14
     timesteps_key = "6_hourly"
-    variable_set_key = "waves"
+    variable_set_key = "mslp"
     # Process the TSV file
     process_tsv(
         args.input_file,

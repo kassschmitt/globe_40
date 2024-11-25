@@ -21,9 +21,10 @@ class ReanalysisRetriever:
     }
 
     VARIABLE_SETS = {
-        "ten_metre_wind": ["10m_u_component_of_wind", "10m_v_component_of_wind"],
-        "mslp": ["mean_sea_level_pressure"],
-        "waves": ['mean_wave_direction', 'mean_wave_period', 'significant_height_of_combined_wind_waves_and_swell']
+        "ten_metre_wind": {'data_set': 'reanalysis-era5-single-levels', 'variables': ["10m_u_component_of_wind", "10m_v_component_of_wind"]},
+        "mslp": {'data_set': 'reanalysis-era5-single-levels', 'variables':["mean_sea_level_pressure"]},
+        "waves": {'data_set': 'reanalysis-era5-single-levels', 'variables': ['mean_wave_direction', 'mean_wave_period', 'significant_height_of_combined_wind_waves_and_swell']},
+        "currents": {'data_set': 'GLOBAL_MULTIYEAR_PHY_001_030', 'variables': ['uo', 'vo']}
     }
 
     def __init__(self, client):
@@ -41,7 +42,8 @@ class ReanalysisRetriever:
         area,
         output_dir,
     ):
-        variable_set = self.VARIABLE_SETS[variable_set_key]
+        variable_set = self.VARIABLE_SETS[variable_set_key]['variables']
+        data_set = self.VARIABLE_SETS[variable_set_key]['data_set']
         timesteps = self.TIMESTEPS[timesteps_key]
 
         # Create the output directory if it doesn't exist
@@ -56,7 +58,7 @@ class ReanalysisRetriever:
         try:
             # Perform the retrieval
             self.client.retrieve(
-                "reanalysis-era5-single-levels",
+                data_set,
                 {
                     "product_type": "reanalysis",
                     "variable": variable_set,

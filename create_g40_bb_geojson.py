@@ -19,6 +19,7 @@ def process_row_into_area_feature(row):
             "description": "{} to {}".format(row["start_city"], row["finish_city"]),
             "stroke": row["leg_color_code"],
             "fill": row["leg_color_code"],
+            "tooltip_edge": "Edge Lat: mid_lat, Lon: mid_lon"
         },
     )
 
